@@ -15,7 +15,7 @@ html{
 	font-size: 20px;
 	margin: 10px 0 20px;
 }
-.btn-top{
+.btn-tap{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
@@ -31,7 +31,7 @@ html{
 	background-color: #ddd;
 	color: #aaa;
 }
-.btn-top span{
+.btn-tap span{
 	font-size: 60px;
 }
 .btn{
