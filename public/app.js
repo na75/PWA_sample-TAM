@@ -10,8 +10,8 @@ const timeText = document.getElementById('js-time')
 const setGame = () =>{
 	tapCount = 0
 	time = 10000
-	countText.innerText = topCount
-	timeText.innerText = time / 1000
+	countText.innerText = tapCount
+	timeText.innerHTML = time / 1000
 }
 setGame()
 
@@ -19,7 +19,7 @@ setGame()
 tapBtn.addEventListener('click',() =>{
 	if(!isPlaying)return false
 	tapCount++
-	countText.innerHTML = tapCount
+	countText.innerText = tapCount
 })
 
 //STARTボタンを押してゲームをスタートさせる
