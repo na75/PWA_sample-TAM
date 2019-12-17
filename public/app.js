@@ -1,7 +1,7 @@
 //変数定義
 let isPlaying = false
 let tapCount, time = 0
-const tapBtn = document.getElementById('js-topBtn')
+const tapBtn = document.getElementById('js-tapBtn')
 const startBtn = document.getElementById('js-startBtn')
 const countText = document.getElementById('js-count')
 const timeText = document.getElementById('js-time')
@@ -17,6 +17,7 @@ setGame()
 
 //タップした時にカウントを増やす
 tapBtn.addEventListener('click',() =>{
+	tapBtn.addEventListener('click', () => {
 	if(!isPlaying)return false
 	tapCount++
 	countText.innerText = tapCount
