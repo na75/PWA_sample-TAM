@@ -8,7 +8,7 @@ const timeText = document.getElementById('js-time')
 
 //ゲームの初期値設定
 const setGame = () =>{
-	topCount = 0
+	tapCount = 0
 	time = 10000
 	countText.innerText = topCount
 	timeText.innerText = time / 1000
@@ -17,10 +17,9 @@ setGame()
 
 //タップした時にカウントを増やす
 tapBtn.addEventListener('click',() =>{
-	tapBtn.addEventListener('click', () => {
 	if(!isPlaying)return false
 	tapCount++
-	countText.innerText = tapCount
+	countText.innerHTML = tapCount
 })
 
 //STARTボタンを押してゲームをスタートさせる
@@ -37,7 +36,7 @@ startBtn.addEventListener('click',() =>{
 		if(time === 0){
 			clearInterval(timer)
 			isPlaying = false
-			srartBtn.style.display = 'inline-block'
+			startBtn.style.display = 'inline-block'
 			startBtn.innerText = 'もう一回'
 		}
 	} ,10)
