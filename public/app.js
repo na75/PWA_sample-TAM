@@ -4,7 +4,7 @@ let tapCount, time = 0
 const tapBtn = document.getElementById('js-topBtn')
 const startBtn = document.getElementById('js-startBtn')
 const countText = document.getElementById('js-count')
-const tapBtn = document.getElementById('js-time')
+const timeText = document.getElementById('js-time')
 
 //ゲームの初期値設定
 const setGame = () =>{
