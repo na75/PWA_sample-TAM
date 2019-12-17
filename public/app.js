@@ -11,15 +11,17 @@ const setGame = () =>{
 	topCount = 0
 	time = 10000
 	countText.innerText = topCount
-	countText.innerText = time / 1000
+	timeText.innerText = time / 1000
 }
+setGame()
 
 //タップした時にカウントを増やす
-tapBtn.addEventlister('click',() =>{
+tapBtn.addEventListener('click',() =>{
 	if(!isPlaying)return false
 	tapCount++
 	countText.innerText = tapCount
 })
+
 //STARTボタンを押してゲームをスタートさせる
 startBtn.addEventListener('click',() =>{
 	setGame()
